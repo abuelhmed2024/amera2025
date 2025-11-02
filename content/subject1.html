@@ -1,0 +1,5188 @@
+<!--برمجة أبوالحمد طه عبدالقادر-->
+<!--باحث دكتوراه في تكنولوجيا التعليم-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>برنامج الإنفوجرافيك التفاعلي </title>
+
+<link rel="stylesheet" href="style/w3.css">
+<link rel="stylesheet" href="style/T-art.css">
+<link rel="stylesheet" href="style/taha.css">
+
+<style>
+
+
+
+</style>
+</head>
+<body dir= "rtl">
+
+
+<!--المشاهد-->
+
+<br>
+<div class=" T-container T-border1" style="background-image: url(img/1.jpg); background-size: cover" >
+
+
+<!--1-->
+	<div id="scene1" style= " display: block;" >
+		<style>
+		/* حركة من أسفل لأعلى */
+		.animation1 {
+		  animation: moveUp1 3s ease-in-out forwards;
+		}
+
+		@keyframes moveUp1 {
+		  from {
+			transform: translateY(200px); /* يبدأ تحت */
+			opacity: 0;
+		  }
+		  to {
+			transform: translateY(0); /* مكانه الطبيعي */
+			opacity: 1;
+		  }
+		}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">1</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الوحدة الأولى: المادة</h2></div>
+		
+		
+		<div  id= "show0" class=" T-responsive-div T-border2 animation1" 
+		style= "top: 17%; right: 10%;width: 80%; height: 70%;" > 
+		<img src="img/10101.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show1()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		
+		
+	</div>
+
+<!--2-->
+	<div id="scene2" style= " display: none;" >
+		
+		<style>
+		.tooltip {
+		  position: relative;
+		  cursor: pointer;
+		}
+
+		.tooltip .tooltip-text {
+		  visibility: hidden;
+		  background-color: SlateBlue;
+		  color: #fff;
+		  text-align: center;
+		  padding: 5px 8px;
+		  border-radius: 6px;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%; /* مكان الرسالة فوق الكلمة */
+		  left: 50%;
+		  transform: translateX(-50%);
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		  white-space: nowrap;
+		}
+
+		.tooltip:hover .tooltip-text {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		</style>
+  
+  
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">2</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">أهداف الدرس</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 5%;width: 50%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">في نهاية الدرس يجب أن يكون التلميذ قادرًا على أن:</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 10%;width: 40%; height:70%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.3vw;color: Indigo; text-align: right">
+		(1) يستنتج أن الذرة وحدة بناء جميع المواد.<br>
+		(2) يُوضح دور العالم   <span class="tooltip">أرنست رذرفورد 
+		<span class="tooltip-text">
+		نبذة عن العالم أرنست رذرفورد<br>
+		رذرفورد عالم نيوزيلاندي. وُلد عام 1871م. <br>
+		وحصل على جائزة نوبل في الكيمياء عام 1908م.<br>
+		 وتوفى عام 1937م. <br>
+		وقد كرمت نيوزيلاندا العالم رذرفورد بوضع صورته<br>
+		على أكبر عملاتها تقديرًا لجهوده في اكتشاف بنية الذرة.
+		</span>
+		</span> في اكتشاف بنية الذرة.<br>
+
+
+
+		(3) يُحدد مكونات الذرة دون الذرية.<br>
+		(4) يتعرف شحنات وكتل مكونات الذرة.<br>
+		(5) يحدد مواقع المكونات دون الذرية بالذرة.<br>
+		(6) يتعرف أن الإلكترونات تدور بأشكال مختلفة في مستويات الطاقة.<br>
+		(7) يتعرف الرموز الكيميائية لبعض العناصر.<br>
+		(8) يستنتج عدد الإلكترونات التي تشغل مستويات الطاقة.<br>
+		(9) يحدد العلاقة بين أعداد الجسيمات دون الذرية المكونة للذرة.<br>
+		(10) يتعرف النظائر.
+
+
+		</h2></div>
+
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 30%; right: 55%;width: 35%; height:45%; display: block; "  > 
+		<img src="img/10201.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback2()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show2()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<!--sound-->
+		<div  id= "sound2" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+	
+		</div>
+
+		
+	</div>
+
+<!--3-->
+	<div id="scene3" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">3</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">مصطلحات الدرس</h2></div>
+		
+		<div  id= "show0" class=" T-responsive-div T-border2" 
+		style= "top: 27%; right: 15%;width: 70%; height: 60%;" > 
+		<img src="img/10301.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback3()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show3()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		
+	</div>
+
+
+
+<!--4-->
+	<div id="scene4" style= " display: none;" >
+		<style>
+		/* حركة من أسفل لأعلى */
+		.animation4a {
+		  animation: moveUp4a 3s ease-in-out forwards;
+		}
+
+		@keyframes moveUp4a {
+		  from {
+			transform: translateY(200px); /* يبدأ تحت */
+			opacity: 0;
+		  }
+		  to {
+			transform: translateY(0); /* مكانه الطبيعي */
+			opacity: 1;
+		  }
+		}
+		</style>
+		
+		<style>
+		  .animation {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 10%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		
+		<style>
+			.circle {
+			  border: 4px solid indigo;  /* الحدود*/
+			  background-color: Violet; /* لون خلفية الدائرة */
+			  border-radius: 25%;        /* جعل الشكل دائري */
+			  display: flex;             /* استخدام flex لمحاذاة النص */
+			  justify-content: center;   /* محاذاة أفقية */
+			  align-items: center;       /* محاذاة رأسية */
+			  text-align: center;        /* محاذاة النص */
+			  padding: 20px;             /* مسافة داخلية حتى لا يلمس الحواف */
+			  overflow: hidden;          /* منع النص من الخروج */
+			  line-height: 1.4;          /* تحسين شكل الأسطر */
+			}
+		</style>
+		
+		<style>
+  
+		  .container4 {
+			position: relative;
+			top: 15%;
+			right: 10%;
+			width: 100%;
+			height: 50%;
+			background-color: ;
+		  }
+		  .numbers4 {
+			display: flex;
+			gap: 15px;
+			margin-bottom: 20px;
+			background-color: ;
+			 align-items: center;
+			 justify-content: center;
+			  height: 20%;
+		  }
+		  .num4 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			
+		  }
+		  .num4:hover {
+			background: darkorange;
+		  }
+		  .text-box4 {
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 10px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 60%;
+			 padding: 5%;
+			 
+		  }
+		</style>
+
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">4</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%; " >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">تهيئة الدرس</h2></div>
+		
+		<div id= "info" class=" T-responsive-div circle" style= "top: 32%; right: 10%;width: 40%; height:12%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: justify">يجيب الدرس عن التساؤلات الاتية:</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 8%;width: 35%; height:70%;" >
+		
+		<div class="container4"  style="font-size: 2vw;color: Indigo; text-align: justify;">
+			<div class="numbers4">
+				<div class="num4" onclick="showText4(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num4" onclick="showText4(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num4" onclick="showText4(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+			</div>
+
+			<div id="text41" class="text-box4 animation"  >
+				ما المكونات التي تشكل نواة ذرة العنصر؟
+			</div>
+			<div id="text42" class="text-box4 animation">
+				لماذا تكون النواة موجبة الشحنة والذرة متعادلة؟
+			</div>
+			<div id="text43" class="text-box4 animation">
+				ما النواتان اللتان تمثلان نظيران؟
+			</div>
+		</div>
+		
+		</div>	
+		
+		
+
+		<div  id= "show1" class= "T-responsive-div T-border2 animation4a" style= "top:  30%; right: 55%;width: 35%; height:45%; display: block; background-color: red "  > 
+		<img src="img/10401.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+			
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback4()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show4()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10401.m4a" autoplay controls />
+		</div>
+		<script>
+			function showText4(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box4').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text4" + num).style.display = "block";
+			}
+		</script>
+
+		<script>
+		document.getElementsByClassId("audio").audio.volume: 1;
+		</script>
+	</div>
+
+
+<!--5-->
+	<div id="scene5" style= " display: none;" >
+		<style>
+		  .animation5 {
+			position: absolute;
+			bottom: -150px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp5 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp5 {
+			from {
+			  bottom: -150px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+  
+		  .container5 {
+			position: relative;
+			top: 30%;
+			right: 25%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+			 
+			  
+		  }
+		  .numbers5 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: right;
+			 justify-content: center;
+			  height: 15%;
+			  flex-direction: column;
+			  right: 10%;
+			 
+		  }
+		  .num5 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+			
+		  }
+		  .num5:hover {
+			background: darkorange;
+		  }
+		  
+		 .text-box5 {
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 10px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 80%;
+			 padding: 5%;
+		
+			   width: 50%;
+		  }
+		  
+		  
+		</style>
+		
+		<style>
+	     
+		.slideshow-container {
+		  position: relative;
+		 
+		  margin: auto;
+		  overflow: hidden;
+		  border-radius: 10px;
+		  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		}
+
+		.slide {
+		  display: none;
+		}
+
+		.slide img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* دوائر المؤشر أسفل الصور */
+		.dots {
+		  text-align: center;
+		  margin-top: 10px;
+		}
+
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 3px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.3s ease;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+		</style>
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">5</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (1) هل يعتبر الهواء مادة؟</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 0%;width: 82%; height:100%;  flex-direction: row;" >
+		
+		
+			<div class="container5"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+		
+			<div class="numbers5">
+				<div class="num5" onclick="showText5(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num5" onclick="showText5(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num5" onclick="showText5(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num5" onclick="showText5(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num5" onclick="showText5(5)"><img src="icon/5.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<div  id= "show1" class= "T-responsive-div " style= "top: -25%; right: 15%;width: 55%; height:65%; display: block;  "  > 
+			<!--1-->
+			<div id="text51" class="text-box5 animation5" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			 <img src="img/10501.jpg" alt="الصورة 1" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text52" class="text-box5 animation5" class="slideshow-container T-border2" style="width:100%; height: 100%" >
+			 <img src="img/10502.jpg" alt="الصورة 2" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text53" class="text-box5 animation5" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/10503.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text54" class="text-box5 animation5" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			 <img src="img/10504.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--5-->
+			<div id="text55" class="text-box5 animation5" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			<img src="img/10505.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			</div>
+			
+			</div>
+			
+		</div>
+			
+			
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback5()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show5()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10501.m4a" autoplay controls />
+		</div>
+		
+		<script>
+			function showText5(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box5').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text5" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  const slides = document.getElementsByClassName("slide");
+		  const dots = document.getElementsByClassName("dot");
+
+		  for (let i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+
+		  slideIndex++;
+		  if (slideIndex > slides.length) {
+			slideIndex = 1;
+		  }
+
+		  for (let i = 0; i < dots.length; i++) {
+			dots[i].classList.remove("active");
+		  }
+
+		  slides[slideIndex - 1].style.display = "block";  
+		  dots[slideIndex - 1].classList.add("active");
+
+		  setTimeout(showSlides, 3000); // تغيير كل 3 ثواني
+		}
+		</script>
+		
+	</div>
+
+
+<!--6-->
+	<div id="scene6" style= " display: none;" >
+		<style>
+		  .animation6 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp6 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp6 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		<!--تنسيق أزرا التحكم في العرض التقديمي الفرعي-->
+		<style>
+			.circle {
+			  border: 4px solid indigo;  /* الحدود*/
+			  background-color: Violet; /* لون خلفية الدائرة */
+			  border-radius: 25%;        /* جعل الشكل دائري */
+			  display: flex;             /* استخدام flex لمحاذاة النص */
+			  justify-content: center;   /* محاذاة أفقية */
+			  align-items: center;       /* محاذاة رأسية */
+			  text-align: center;        /* محاذاة النص */
+			  padding: 20px;             /* مسافة داخلية حتى لا يلمس الحواف */
+			  overflow: hidden;          /* منع النص من الخروج */
+			  line-height: 1.4;          /* تحسين شكل الأسطر */
+			}
+		</style>
+		
+		<style>
+  
+		  .container106a {
+			position: relative;
+			top: 30%;
+			right: 30%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+			 
+			  
+		  }
+		  .numbers6a {
+			display: ;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: right;
+			 justify-content: center;
+			  height: 100%;
+			  flex-direction: ;
+			  right: 10%;
+			 text-align: center;
+		  }
+		  .num6a {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: ;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+			
+		  }
+		  .num6a:hover {
+			background: darkorange;
+		  }
+		  .text-box6a {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 80%;
+			 padding: 5%;
+			  top: 0%;
+			   width: 50%;
+		  }
+		</style>
+		
+		
+		<style>
+  
+		  .container6 {
+			position: relative;
+			top: 10%;
+			right: 10%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+		  }
+		  .numbers6 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: center;
+			 justify-content: center;
+			  height: 15%;
+		  }
+		  .num6 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+		  }
+		  .num6:hover {
+			background: darkorange;
+		  }
+		   .text-box6 {
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 10px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 85%;
+			 padding: 5%;
+			 width: 100%;
+		  }
+		  
+		</style>
+		
+		<style>
+		.prev6:hover, .next6:hover {
+		  background-color:MidnightBlue ;
+		  color:  MidnightBlue;
+		}
+		
+		<!--تنسيق نمط الكتابة على صورة مع الاختفاء التدريجي للصورة-->
+		.middle {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+
+		.container106:hover .image106 {
+		  opacity: 0.1;
+		}
+
+		.container106:hover .middle {
+		  opacity: 1;
+		}
+
+		.text6 {
+		  background-color: #04AA6D;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+		
+		</style>
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">6</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 5%; right: 0%;width: 82%; height:100%;" >
+		
+		<div class="container6"  style="font-size: 2vw;color: Indigo; text-align: justify">
+			<div class="numbers6">
+				<div class="num6" onclick="showText6(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num6" onclick="showText6(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num6" onclick="showText6(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num6" onclick="showText6(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+			</div>
+			<!--الإطار الفرعي-->
+			<!--1-->
+			<div id="text61" class="text-box6 animation6">
+			
+				<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (2) استنتج وحدة بناء المادة</h2></div>
+				
+				<div id= "info" class=" T-responsive-div  circle" style= "top: 22%; right: 7%;width: 30%; height:50%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: justify">من الشكل (1) الذي يوضح تمثال أبو الهول ومن خلفه أهرامات الجيزة وكلاهما مكون من صخر الحجر الجيري الذي يتركب أساسًا من مادة كربونات الكالسيوم.</h2></div>
+					
+				<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 20%; right: 42%;width: 50%; height:60%; display: block; "  > 
+				<a target="_blank" href="img/10601.jpg">
+				<img src="img/10601.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%">
+				</a>
+				</div>
+				
+				<!--النقاط التفاعلية على الصورة-->
+				<!--1-->
+				<div id= "info" class=" T-responsive-div  " style= "top: 18%; right: 49%;width: 8%; height:20%; border-radius: 50%; background-color:  " >
+				<div class="container106a"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+				<div class="numbers6a">
+				<div id="text6a1" class="num6a" onclick="showText6a(1)">1</div>
+				</div>
+				</div>
+				</div>
+				
+				<!--2-->
+				<div id= "info" class=" T-responsive-div  " style= "top: 31%; right: 42%;width: 8%; height:20%; border-radius: 50%; background-color:  " >
+				<div class="container106a"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+				<div class="numbers6a">
+				<div id="text6a2" class="num6a" onclick="showText6a(2)">2</div>
+				</div>
+				</div>
+				</div>
+				
+				<!--3-->
+				<div id= "info" class=" T-responsive-div  " style= "top: 50%; right: 50%;width: 9%; height:20%; border-radius: 50%; background-color:  " >
+				<div class="container106a"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+				<div class="numbers6a">
+				<div id="text6a3" class="num6a" onclick="showText6a(3)">3</div>
+				</div>
+				</div>
+				</div>
+				
+				<!--4-->
+				<div id= "info" class=" T-responsive-div  " style= "top: 53%; right: 63%;width: 9%; height:20%; border-radius: 50%; background-color:  " >
+				<div class="container106a"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+				<div class="numbers6a">
+				<div id="text6a4" class="num6a" onclick="showText6a(4)">4</div>
+				</div>
+				</div>
+				</div>
+				<!--نهاية النقاط التفاعلية على الصورة-->
+				
+				
+			
+				<div id= "info" class=" T-responsive-div " style= "top: 80%; right: 25%;width: 70%; height:5%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: right">ملحوظة: يمكنك النقر على الصورة لعرضها في إطار منفصل بحجم كبير.</h2></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+				
+				<!--sound-->
+				<div  id= "sound" class=" T-responsive-div " 
+				style= "top: 90%; right: 75%;width: 25%; height: 8%; " > 
+				<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;  " src= "audio/10601.m4a" autoplay controls />
+				</div>
+				<script>
+			function showText6a(num) {
+			
+			// إظهار النص المطلوب
+			document.getElementById("text6a" + num).style.display = " none";
+			}
+		</script>
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text62" class="text-box6 animation6">
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (2) استنتج وحدة بناء المادة</h2></div>
+			
+				<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 34%;width: 30%; height:30%;" >
+				<div class="text6"  style="font-size: 3vw;color: white; text-align: center"><b class= "">الجزيئات</b></div></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 20%; right: 15%;width: 70%; height:40%;" >
+				<div class="container106"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+				<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+				<img src="img/10621.jpg" class="image106" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+				</div>
+				</div>
+				</div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 20%;width: 60%; height:10%; text-align: center" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">ملحوظة: يمكنك الوقوف بالمؤشر على السؤال لرؤية الإجابة.</h2></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+			
+				<!--sound-->
+				<div  id= "sound" class=" T-responsive-div " 
+				style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+				<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10602.m4a" autoplay controls />
+				</div>
+			
+			
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text63" class="text-box6 animation6">
+				<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (2) استنتج وحدة بناء المادة</h2></div>
+			
+				<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 34%;width: 30%; height:30%;" >
+				<div class="text6"  style="font-size: 3vw;color: white; text-align: center"><b class= "">الذرة</b></div></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 20%; right: 15%;width: 70%; height:40%;" >
+				<div class="container106"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+				<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+				<img src="img/10622.jpg" class="image106" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+				</div>
+				</div>
+				</div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 20%;width: 60%; height:10%; text-align: center" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">ملحوظة: يمكنك الوقوف بالمؤشر على السؤال لرؤية الإجابة.</h2></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+			
+				<!--sound-->
+				<div  id= "sound" class=" T-responsive-div " 
+				style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+				<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10603.m4a" autoplay controls />
+				</div>
+				
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text64" class="text-box6 animation6">
+				<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (2) استنتج وحدة بناء المادة</h2></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:5%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 2.5vw;color: Indigo; text-align: right">يستنتج مما سبق أن:</h2></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 15%;width: 70%; height:70%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: justify">
+				الذرة هي وحدة بناء وتركيب كل المواد.
+				
+				</h2></div>
+				
+				
+				
+				<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 40%; right: 30%;width: 40%; height:45%; display: block; " > 
+				<img src="img/10602.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+				<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+			
+				<!--sound-->
+				<div  id= "sound" class=" T-responsive-div " 
+				style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+				<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10604.m4a" autoplay controls />
+				</div>
+			</div>
+			
+		</div>
+		</div>	
+		
+		
+		
+		<!--نهاية العرض التقديمي الفرعي-->
+
+	
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback6()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show6()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		
+		
+		<script>
+			function showText6(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box6').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text6" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex6 = [1,1];
+		let slideId6 = ["mySlides6", "mySlides2"]
+		showSlides6(1, 0);
+		showSlides6(1, 1);
+
+		function plusSlides6(n, no) {
+		  showSlides6(slideIndex6[no] += n, no);
+		}
+
+		function showSlides6(n, no) {
+		  let i;
+		  let x = document.getElementsByClassName(slideId6[no]);
+		  if (n > x.length) {slideIndex6[no] = 1}    
+		  if (n < 1) {slideIndex6[no] = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex6[no]-1].style.display = "block";  
+		}
+		</script>
+		
+		
+	</div>
+
+<!--7-->
+	<div id="scene7" style= " display: none;" >
+		<style>
+		  .animation7 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp7 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp7 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+  
+		  .container7 {
+			position: relative;
+			top: 30%;
+			right: 25%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+			 
+			  
+		  }
+		  .numbers7 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: right;
+			 justify-content: center;
+			  height: 15%;
+			  flex-direction: column;
+			  right: 10%;
+			 
+		  }
+		  .num7 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+			
+		  }
+		  .num7:hover {
+			background: darkorange;
+		  }
+		  .text-box7 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 80%;
+			 padding: 5%;
+		
+			   width: 50%;
+		  }
+		</style>
+		
+		<style>
+	     
+		.slideshow-container7 {
+		  position: relative;
+		 
+		  margin: auto;
+		  overflow: hidden;
+		  border-radius: 10px;
+		  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		}
+
+		.slide7 {
+		  display: none;
+		}
+
+		.slide7 img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* دوائر المؤشر أسفل الصور */
+		.dots7 {
+		  text-align: center;
+		  margin-top: 10px;
+		}
+
+		.dot7 {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 3px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.3s ease;
+		}
+
+		.active7 {
+		  background-color: #717171;
+		}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">7</h2></div>
+		
+			
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">بنية الذرة</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 0%;width: 82%; height:100%;  flex-direction: row;" >
+		
+		
+			<div class="container7"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+		
+			<div class="numbers7">
+				<div class="num7" onclick="showText7(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num7" onclick="showText7(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num7" onclick="showText7(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num7" onclick="showText7(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+			
+				
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<div  id= "show1" class= "T-responsive-div " style= "top: -25%; right: 15%;width: 55%; height:65%; display: block;  "  > 
+			<!--1-->
+			<div id="text71" class="text-box7 animation7" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			<img src="img/10701.jpg" alt="الصورة 1" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text72" class="text-box7 animation7" class="slideshow-container T-border2" style="width:100%; height: 100%" >
+			   <img src="img/10702.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text73" class="text-box7 animation7" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/10703.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text74" class="text-box7 animation7" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/10704.jpg" alt="الصورة 4" style="width:100%; height: 100%">
+			</div>
+			
+			
+			
+			</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback7()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+				
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show7()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio autoplay controls> 
+		<source src="audio/10701.m4a" type="audio/mpeg" >
+		<source src="audio/10702.m4a" type="audio/mpeg" >
+		<source src="audio/10703.m4a" type="audio/mpeg" >
+		<source src="audio/10704.m4a" type="audio/mpeg" >
+		</audio>		
+		</div>
+		
+		<script>
+			function showText7(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box7').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text7" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex7 = 0;
+		showSlides7();
+
+		function showSlides7() {
+		  const slides7 = document.getElementsByClassName("slide7");
+		  const dots7 = document.getElementsByClassName("dot7");
+
+		  for (let i = 0; i < slides7.length; i++) {
+			slides7[i].style.display = "none";  
+		  }
+
+		  slideIndex7++;
+		  if (slideIndex7 > slides7.length) {
+			slideIndex7 = 1;
+		  }
+
+		  for (let i = 0; i < dots7.length; i++) {
+			dots7[i].classList.remove("active7");
+		  }
+
+		  slides7[slideIndex7 - 1].style.display = "block";  
+		  dots7[slideIndex7 - 1].classList.add("active7");
+
+		  setTimeout(showSlides7, 20000); // تغيير كل 3 ثواني
+		}
+		</script>
+		
+	</div>
+
+<!--8-->
+	<div id="scene8" style= " display: none;" >
+		<style>
+		  .animation8 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp8 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp8 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+			.circle {
+			  border: 4px solid indigo;  /* الحدود*/
+			  background-color: Violet; /* لون خلفية الدائرة */
+			  border-radius: 25%;        /* جعل الشكل دائري */
+			  display: flex;             /* استخدام flex لمحاذاة النص */
+			  justify-content: center;   /* محاذاة أفقية */
+			  align-items: center;       /* محاذاة رأسية */
+			  text-align: center;        /* محاذاة النص */
+			  padding: 20px;             /* مسافة داخلية حتى لا يلمس الحواف */
+			  overflow: hidden;          /* منع النص من الخروج */
+			  line-height: 1.4;          /* تحسين شكل الأسطر */
+			}
+		</style>
+		
+		<!--تنسيق أزرا التحكم في العرض التقديمي الفرعي-->
+		<style>
+  
+		  .container8 {
+			position: relative;
+			top: 10%;
+			right: 10%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+		  }
+		  .numbers8 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: center;
+			 justify-content: center;
+			  height: 15%;
+		  }
+		  .num8 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+		  }
+		  .num8:hover {
+			background: darkorange;
+		  }
+		  .text-box8 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 85%;
+			 padding: 5%;
+			 
+			   width: 100%;
+		  }
+		</style>
+		
+		
+		<style>
+		.prev8:hover, .next8:hover {
+		  background-color:MidnightBlue ;
+		  color:  MidnightBlue;
+		}
+		
+		<!--تنسيق نمط الكتابة على صورة مع الاختفاء التدريجي للصورة-->
+		.middle {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+
+		.container108:hover .image108 {
+		  opacity: 0.1;
+		}
+
+		.container108:hover .middle {
+		  opacity: 1;
+		}
+
+		.text8 {
+		  background-color: #04AA6D;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">8</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+		<div id= "info" class=" T-responsive-div " style= "top: 5%; right: 0%;width: 82%; height:100%;" >
+		
+		
+			<div class="container8"  style="font-size: 2vw;color: Indigo; text-align: justify">
+		
+			<div class="numbers8">
+				<div class="num8" onclick="showText8(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num8" onclick="showText8(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num8" onclick="showText8(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num8" onclick="showText8(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<!--1-->
+			<div id="text81" class="text-box8 animation8">	
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (3) فسر خصائص الجسيمات</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:10%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">يوضح الجدول (1) خصائص الجسيمات دون الذرية المكونة للذرة.</h2></div>
+			
+			<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 30%; right: 25%;width: 50%; height:55%; display: block; " > 
+			<img src="img/10801.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+			
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10801.m4a" autoplay controls />
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text82" class="text-box8 animation8">
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (3) فسر خصائص الجسيمات</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 29%; right: 20%;width: 60%; height:30%;" >
+			<div class="text8"  style="font-size: 2vw;color: white; text-align: center"><b class= "">بسبب احتواءها على البروتونات الموجبة (بإهمال شحنة النيوترونات المتعادلة).</b></div></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 20%; right: 15%;width: 70%; height:40%;" >
+			<div class="container108"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+			<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+			<img src="img/10821.jpg" class="image108" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+			</div>
+			</div>
+			</div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 20%;width: 60%; height:10%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">ملحوظة: يمكنك الوقوف بالمؤشر على السؤال لرؤية الإجابة.</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10802.m4a" autoplay controls />
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text83" class="text-box8 animation8">
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (3) فسر خصائص الجسيمات</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 29%; right: 20%;width: 60%; height:30%;" >
+			<div class="text8"  style="font-size: 2vw;color: white; text-align: center"><b class= "">لضآلة كتلة الالكترونات إذا ما قورنت بكتلة ما تحتويه النواة من بروتونات ونيوترونات.</b></div></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 20%; right: 15%;width: 70%; height:40%;" >
+			<div class="container108"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+			<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+			<img src="img/10822.jpg" class="image108" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+			</div>
+			</div>
+			</div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 20%;width: 60%; height:10%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">ملحوظة: يمكنك الوقوف بالمؤشر على السؤال لرؤية الإجابة.</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10803.m4a" autoplay controls />
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text84" class="text-box8 animation8">		
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (3) فسر خصائص الجسيمات</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2.5vw;color: Indigo; text-align: right">يتضح مما سبق أن:</h2></div>
+			
+			
+				
+			<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 15%;width: 70%; height:70%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: justify">
+			1- شحنة البروتون تساوي شحنة الإلكترون في المقدار، وتخالفها في النوع.<br>
+			2- تقدر كتل المكونات دون الذرية بوحدة الكتل الذرية (u).<br>
+			3- تهمل كتلة الإلكترونات عند حساب كتلة الذرة لضآلتها مقارنةً بكتلة البروتونات أو النيوترونات.
+
+			
+			</h2></div>
+
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10804.m4a" autoplay controls />
+			</div>
+			
+			</div>
+		
+			</div>
+	
+		</div>
+		<!--نهاية العرض التقديمي الفرعي-->
+		
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback8()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show8()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<script>
+			function showText8(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box8').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text8" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex8 = [1,1];
+		let slideId8 = ["mySlides8", "mySlides2"]
+		showSlides8(1, 0);
+		showSlides8(1, 1);
+
+		function plusSlides8(n, no) {
+		  showSlides8(slideIndex8[no] += n, no);
+		}
+
+		function showSlides8(n, no) {
+		  let i;
+		  let x = document.getElementsByClassName(slideId8[no]);
+		  if (n > x.length) {slideIndex8[no] = 1}    
+		  if (n < 1) {slideIndex8[no] = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex8[no]-1].style.display = "block";  
+		}
+		</script>
+		
+		
+	</div>
+	
+	
+<!--9-->
+	<div id="scene9" style= " display: none;" >
+		<style>
+  
+		  .container9 {
+			position: relative;
+			top: 30%;
+			right: 30%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+			 
+			  
+		  }
+		  .numbers9 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: right;
+			 justify-content: center;
+			  height: 15%;
+			  flex-direction: column;
+			  right: 10%;
+			 
+		  }
+		  .num9 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+			
+		  }
+		  .num9:hover {
+			background: darkorange;
+		  }
+		  .text-box9 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 80%;
+			 padding: 5%;
+			  top: 0%;
+			   width: 50%;
+		  }
+		</style>
+		
+		<style>
+	     
+		.slideshow-container9 {
+		  position: relative;
+		 
+		  margin: auto;
+		  overflow: hidden;
+		  border-radius: 10px;
+		  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		}
+
+		.slide9 {
+		  display: none;
+		}
+
+		.slide img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* دوائر المؤشر أسفل الصور */
+		.dots9 {
+		  text-align: center;
+		  margin-top: 10px;
+		}
+
+		.dot9 {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 3px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.3s ease;
+		}
+
+		.active9 {
+		  background-color: #717171;
+		}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">9</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">مستويات الطاقة</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 0%;width: 82%; height:100%;  flex-direction: row;" >
+		
+		
+			<div class="container9"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+		
+			<div class="numbers9">
+			
+				<div class="num9" onclick="showText9(1)">1</div>
+				<div class="num9" onclick="showText9(2)">2</div>
+				<div class="num9" onclick="showText9(3)">3</div>
+				<div class="num9" onclick="showText9(4)">4</div>
+				
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<div  id= "show1" class= "T-responsive-div " style= "top: -25%; right: 15%;width: 40%; height:65%; display: block;  "  > 
+			
+			
+			<!--الإطار الفرعي-->
+			<!--1-->
+			<!--تم حذف الصورة رقم 1 لأنه لا يوجد مستوى صفر-->
+			<div id="text91" class="text-box9" class="slideshow-container T-border2" style="width:100%; height: 100%" >
+			 <img src="img/10902.jpg" alt="الصورة 2" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text92" class="text-box9" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			   <img src="img/10903.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text93" class="text-box9" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/10904.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--5-->
+			<div id="text94" class="text-box9" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/10905.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback9()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show9()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/10901.m4a" autoplay controls />
+		</div>
+		
+		<script>
+			function showText9(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box9').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text9" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex9 = 0;
+		showSlides9();
+
+		function showSlides9() {
+		  const slides9 = document.getElementsByClassName("slide9");
+		  const dots9 = document.getElementsByClassName("dot9");
+
+		  for (let i = 0; i < slides9.length; i++) {
+			slides9[i].style.display = "none";  
+		  }
+
+		  slideIndex9++;
+		  if (slideIndex9 > slides9.length) {
+			slideIndex9 = 1;
+		  }
+
+		  for (let i = 0; i < dots9.length; i++) {
+			dots9[i].classList.remove("active9");
+		  }
+
+		  slides9[slideIndex9 - 1].style.display = "block";  
+		  dots9[slideIndex9 - 1].classList.add("active9");
+
+		  setTimeout(showSlides9, 3000); // تغيير كل 3 ثواني
+		}
+		</script>
+		
+	</div>
+	
+
+<!--10-->
+	<div id="scene10" style= " display: none;" >
+		
+		<!--تنسيق أزرا التحكم في العرض التقديمي الفرعي-->
+		<style>
+		  .animation10 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp10 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp10 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+  
+		  .container10 {
+			position: relative;
+			top: 10%;
+			right: 10%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+		  }
+		  .numbers10 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: center;
+			 justify-content: center;
+			  height: 15%;
+		  }
+		  .num10 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+		  }
+		  .num10:hover {
+			background: darkorange;
+		  }
+		  .text-box10 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 85%;
+			 padding: 5%;
+			
+			   width: 100%;
+		  }
+		</style>
+		
+		<style>
+		.prev10:hover, .next10:hover {
+		  background-color:MidnightBlue ;
+		  color:  MidnightBlue;
+		}
+		
+		<!--تنسيق نمط الكتابة على صورة مع الاختفاء التدريجي للصورة-->
+		.middle {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+
+		.container110:hover .image110 {
+		  opacity: 0.1;
+		}
+
+		.container110:hover .middle {
+		  opacity: 1;
+		}
+
+		.text10 {
+		  background-color: #04AA6D;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+		
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">10</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 5%; right: 0%;width: 82%; height:100%;" >
+		
+		
+			<div class="container10"  style="font-size: 2vw;color: Indigo; text-align: justify">
+		
+			<div class="numbers10">
+				<div class="num10" onclick="showText10(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num10" onclick="showText10(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num10" onclick="showText10(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<!--1-->
+			<div id="text101" class="text-box10 animation10">
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (4) حلل مستويات الطاقة</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">تأمل الشكلين (4) ، (5) ثم أجب عن الأسئلة التالية:</h2></div>
+			
+			<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 30%; right: 10%;width: 30%; height:40%; display: block; " > 
+			<img src="img/11001.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+			
+			<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 30%; right: 55%;width: 30%; height:40%; display: block; " > 
+			<img src="img/11002.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+			
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11001.m4a" autoplay controls />
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--1-->
+			<div id="text102" class="text-box10 animation10">
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (4) حلل مستويات الطاقة</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 5%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">(1) ما عدد الإلكترونات التي يتشبع بها كل مستوى طاقة من المستويات الأربعة الأولى؟</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 10%;width: 30%; height:10%;" >
+			<div class="text10"  style="font-size: 1.5vw;color: white; text-align: center"><b class= "">2 ( الكترونيين)</b></div></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 27%; right: 5%;width: 40%; height:20%;" >
+			<div class="container110"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+			<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+			<img src="img/11021.jpg" class="image110" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+			</div>
+			</div>
+			</div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 55%; right: 15%;width: 20%; height:10%;" >
+			<div class="text10"  style="font-size: 1.5vw;color: white; text-align: center"><b class= "">8 إلكترونات</b></div></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 52%; right: 5%;width: 40%; height:20%;" >
+			<div class="container110"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+			<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+			<img src="img/11022.jpg" class="image110" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+			</div>
+			</div>
+			</div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 65%;width: 20%; height:10%;" >
+			<div class="text10"  style="font-size: 1.5vw;color: white; text-align: center"><b class= "">18 إلكترون</b></div></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 27%; right: 55%;width: 40%; height:20%;" >
+			<div class="container110"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+			<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+			<img src="img/11023.jpg" class="image110" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+			</div>
+			</div>
+			</div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 55%; right: 65%;width: 20%; height:10%;" >
+			<div class="text10"  style="font-size: 1.5vw;color: white; text-align: center"><b class= "">32 إلكترون</b></div></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 52%; right: 55%;width: 40%; height:20%;" >
+			<div class="container110"   style= " position: relative;   width: 100%;   height: 100%;   " >		
+			<div class="" style= "top: 0%; right: 0%;width: 100%; height:100%;  " >
+			<img src="img/11024.jpg" class="image110" style=" display: block;  transition: .5s ease; top: 17%; right: 20%;width: 100%; height:100%;  border-radius: 10px;">
+			</div>
+			</div>
+			</div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 80%; right: 20%;width: 60%; height:10%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">ملحوظة: يمكنك الوقوف بالمؤشر على السؤال لرؤية الإجابة.</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11002.m4a" autoplay controls />
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text103" class="text-box10 animation10">
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (4) حلل مستويات الطاقة</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2.5vw;color: Indigo; text-align: right">(2) ماذا يحدث لطاقة الإلكترون كلما ابتعد عن النواة؟</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 50%; right: 20%;width: 60%; height:10%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">ملحوظة: سلم إجابتك إلى المعلم.</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11003.m4a" autoplay controls />
+			</div>
+			</div>
+			
+			</div>
+		
+		
+		
+		</div>
+		<!--نهاية العرض التقديمي الفرعي-->
+		
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback10()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show10()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<script>
+			function showText10(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box10').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text10" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex10 = [1,1];
+		let slideId10 = ["mySlides10", "mySlides2"]
+		showSlides10(1, 0);
+		showSlides10(1, 1);
+
+		function plusSlides10(n, no) {
+		  showSlides10(slideIndex10[no] += n, no);
+		}
+
+		function showSlides10(n, no) {
+		  let i;
+		  let x = document.getElementsByClassName(slideId10[no]);
+		  if (n > x.length) {slideIndex10[no] = 1}    
+		  if (n < 1) {slideIndex10[no] = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex10[no]-1].style.display = "block";  
+		}
+		</script>
+		
+	</div>
+
+
+<!--11-->
+	<div id="scene11" style= " display: none;" >
+		<style>
+		  .animation11 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp11 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp11 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+  
+		  .container11 {
+			position: relative;
+			top: 30%;
+			right: 20%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+			 
+			  
+		  }
+		  .numbers11 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: right;
+			 justify-content: center;
+			  height: 15%;
+			  flex-direction: column;
+			  right: 10%;
+			 
+		  }
+		  .num11 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+			
+		  }
+		  .num11:hover {
+			background: darkorange;
+		  }
+		  .text-box11 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 80%;
+			 padding: 5%;
+		
+			   width: 70%;
+		  }
+		</style>
+		
+		<style>
+	     
+		.slideshow-container11 {
+		  position: relative;
+		 
+		  margin: auto;
+		  overflow: hidden;
+		  border-radius: 10px;
+		  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		}
+
+		.slide11 {
+		  display: none;
+		}
+
+		.slide11 img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* دوائر المؤشر أسفل الصور */
+		.dots11 {
+		  text-align: center;
+		  margin-top: 10px;
+		}
+
+		.dot11 {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 3px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.3s ease;
+		}
+
+		.active11 {
+		  background-color: #717171;
+		}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">11</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة </h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">الفهم الرياضياتي</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 0%;width: 82%; height:100%;  flex-direction: row;" >
+		
+		
+			<div class="container11"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+		
+			<div class="numbers11">
+				<div class="num11" onclick="showText11(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num11" onclick="showText11(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num11" onclick="showText11(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num11" onclick="showText11(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num11" onclick="showText11(5)"><img src="icon/5.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<div  id= "show1" class= "T-responsive-div " style= "top: -25%; right: 15%;width: 60%; height:65%; display: block;  "  > 
+			<!--1-->
+			<div id="text111" class="text-box11 animation11" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			<div id="info" class="T-responsive-div" style="top: 25%; right: 15%; width: 70%; height: 5%;">
+			<h2 class="T-text-align-center" style="font-size: 1.5vw; color: Indigo; text-align: justify">
+				1- تحقق من نتائج النشاط (3) بتطبيق العلاقة (2n<sup>2</sup>).
+			</h2>
+			</div>
+			<div id= "info" class=" T-responsive-div " style= "top: 50%; right: 30%;width: 40%; height:70%;" >
+				<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: right; cursor: pointer;" onclick= "showback41()">
+				عودة إلى النشاط (3)
+				</h2></div>
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text112" class="text-box11 animation11" class="slideshow-container T-border2" style="width:100%; height: 100%" >
+			<img src="img/11101.jpg" alt="الصورة 2" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text113" class="text-box11 animation11" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			 <img src="img/11102.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text114" class="text-box11 animation11" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			<img src="img/11103.jpg" alt="الصورة 4" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--5-->
+			<div id="text115" class="text-box11 animation11" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			 <img src="img/11104.jpg" alt="الصورة 4" style="width:100%; height: 100%">
+			</div>
+			
+			</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback11()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+				
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show11()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio autoplay controls> 
+		<source src="audio/11101.m4a" type="audio/mpeg" >
+		<source src="audio/11102.m4a" type="audio/mpeg" >
+		<source src="audio/11103.m4a" type="audio/mpeg" >
+		<source src="audio/11104.m4a" type="audio/mpeg" >
+		<source src="audio/11105.m4a" type="audio/mpeg" >
+		</audio>		
+		</div>
+		
+		<script>
+			function showText11(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box11').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text11" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex11 = 0;
+		showSlides11();
+
+		function showSlides11() {
+		  const slides11 = document.getElementsByClassName("slide11");
+		  const dots11 = document.getElementsByClassName("dot11");
+
+		  for (let i = 0; i < slides11.length; i++) {
+			slides11[i].style.display = "none";  
+		  }
+
+		  slideIndex11++;
+		  if (slideIndex11 > slides11.length) {
+			slideIndex11 = 1;
+		  }
+
+		  for (let i = 0; i < dots11.length; i++) {
+			dots11[i].classList.remove("active11");
+		  }
+
+		  slides11[slideIndex11 - 1].style.display = "block";  
+		  dots11[slideIndex11 - 1].classList.add("active11");
+
+		  setTimeout(showSlides11, 10000); // تغيير كل 3 ثواني
+		}
+		</script>
+		
+	</div>
+
+<!--12-->
+	<div id="scene12" style= " display: none;" >
+		<style>
+			.circle {
+			  border: 4px solid indigo;  /* الحدود*/
+			  background-color: Violet; /* لون خلفية الدائرة */
+			  border-radius: 50%;        /* جعل الشكل دائري */
+			  display: flex;             /* استخدام flex لمحاذاة النص */
+			  justify-content: center;   /* محاذاة أفقية */
+			  align-items: center;       /* محاذاة رأسية */
+			  text-align: center;        /* محاذاة النص */
+			  padding: 20px;             /* مسافة داخلية حتى لا يلمس الحواف */
+			  overflow: hidden;          /* منع النص من الخروج */
+			  line-height: 1.4;          /* تحسين شكل الأسطر */
+			}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">12</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">قيم فهمك</h2></div>
+		
+		<div id= "info" class=" T-responsive-div  circle" style= "top: 28%; right: 15%;width: 25%; height:40%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: justify">
+		في ضوء فهمك لتوزيع الإلكترونات على مستويات الطاقة قم بوضع نقط (•) في مستويات الطاقة تُمثل الإلكترونات في نماذج الذرات الموضحة بالشكل (6).
+		</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 30%; right: 45%;width: 40%; height:35%; display: block; "  > 
+		<img src="img/11201.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 30%;width: 30%; height:20%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: right">
+		ملحوظة: سلم الإجابة إلى المعلم.
+		</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+				
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback12()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show12()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11201.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+<!--13-->
+	<div id="scene13" style= " display: none;" >
+		<style>
+		  .animation13 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp13 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp13 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+  
+		  .container13 {
+			position: relative;
+			top: 30%;
+			right: 20%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+			 
+			  
+		  }
+		  .numbers13 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: right;
+			 justify-content: center;
+			  height: 15%;
+			  flex-direction: column;
+			  right: 10%;
+			 
+		  }
+		  .num13 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+			
+		  }
+		  .num13:hover {
+			background: darkorange;
+		  }
+		  .text-box13 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 80%;
+			 padding: 5%;
+		
+			   width: 70%;
+		  }
+		</style>
+		
+		<style>
+	     
+		.slideshow-container13 {
+		  position: relative;
+		 
+		  margin: auto;
+		  overflow: hidden;
+		  border-radius: 10px;
+		  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		}
+
+		.slide13 {
+		  display: none;
+		}
+
+		.slide13 img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* دوائر المؤشر أسفل الصور */
+		.dots13 {
+		  text-align: center;
+		  margin-top: 10px;
+		}
+
+		.dot13 {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 3px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.3s ease;
+		}
+
+		.active13 {
+		  background-color: #717171;
+		}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">13</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">رموز العناصر</h2></div>
+		
+		<!--بداية العرض التقديمي الفرعي-->
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 0%;width: 82%; height:100%;  flex-direction: row;" >
+		
+		
+			<div class="container13"  style="font-size: 2vw;color: Indigo; text-align: justify;  ">
+		
+			<div class="numbers13">
+				<div class="num13" onclick="showText13(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num13" onclick="showText13(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num13" onclick="showText13(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num13" onclick="showText13(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num13" onclick="showText13(5)"><img src="icon/5.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<div  id= "show1" class= "T-responsive-div " style= "top: -25%; right: 15%;width: 60%; height:65%; display: block;  "  > 
+			<!--1-->
+			<div id="text131" class="text-box13 animation13" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			 <img src="img/11301.jpg" alt="الصورة 2" style="width:100%; height: 100%">	
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text132" class="text-box13 animation13" class="slideshow-container T-border2" style="width:100%; height: 100%" >
+			  <img src="img/11302.jpg" alt="الصورة 3" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text133" class="text-box13 animation13" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/11303.jpg" alt="الصورة 4" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text134" class="text-box13 animation13" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			  <img src="img/11304.jpg" alt="الصورة 4" style="width:100%; height: 100%">
+			</div>
+			
+			<!--الإطار الفرعي-->
+			<!--5-->
+			<div id="text135" class="text-box13 animation13" class="slideshow-container T-border2" style="width:100%; height: 100%">
+			<img src="img/11305.jpg" alt="الصورة 4" style="width:100%; height: 100%">
+			</div>
+			
+			</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback13()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show13()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio autoplay controls> 
+		<source src="audio/11301.m4a" type="audio/mpeg" >
+		<source src="audio/11302.m4a" type="audio/mpeg" >
+		<source src="audio/11303.m4a" type="audio/mpeg" >
+		<source src="audio/11304.m4a" type="audio/mpeg" >
+		<source src="audio/11305.m4a" type="audio/mpeg" >
+		</audio>	
+		</div>
+		
+		<script>
+			function showText13(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box13').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text13" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex13 = 0;
+		showSlides13();
+
+		function showSlides13() {
+		  const slides13 = document.getElementsByClassName("slide13");
+		  const dots13 = document.getElementsByClassName("dot13");
+
+		  for (let i = 0; i < slides13.length; i++) {
+			slides13[i].style.display = "none";  
+		  }
+
+		  slideIndex13++;
+		  if (slideIndex13 > slides13.length) {
+			slideIndex13 = 1;
+		  }
+
+		  for (let i = 0; i < dots13.length; i++) {
+			dots13[i].classList.remove("active13");
+		  }
+
+		  slides13[slideIndex13 - 1].style.display = "block";  
+		  dots13[slideIndex13 - 1].classList.add("active13");
+
+		  setTimeout(showSlides13, 10000); // تغيير كل 3 ثواني
+		}
+		</script>
+		
+	</div>
+
+
+
+<!--14-->
+	<div id="scene14" style= " display: none;" >
+		<style>
+		/* حركة من أسفل لأعلى */
+		.animation14a {
+		  animation: moveUp14a 3s ease-in-out forwards;
+		}
+
+		@keyframes moveUp14a {
+		  from {
+			transform: translateY(200px); /* يبدأ تحت */
+			opacity: 0;
+		  }
+		  to {
+			transform: translateY(0); /* مكانه الطبيعي */
+			opacity: 1;
+		  }
+		}
+		</style>
+		
+		<style>
+		  .animation14 {
+			position: absolute;
+			bottom: -135px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp14 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp14 {
+			from {
+			  bottom: -135px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: -35%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+			.circle {
+			  border: 4px solid indigo;  /* الحدود*/
+			  background-color: Violet; /* لون خلفية الدائرة */
+			  border-radius: 25%;        /* جعل الشكل دائري */
+			  display: flex;             /* استخدام flex لمحاذاة النص */
+			  justify-content: center;   /* محاذاة أفقية */
+			  align-items: center;       /* محاذاة رأسية */
+			  text-align: center;        /* محاذاة النص */
+			  padding: 20px;             /* مسافة داخلية حتى لا يلمس الحواف */
+			  overflow: hidden;          /* منع النص من الخروج */
+			  line-height: 1.4;          /* تحسين شكل الأسطر */
+			}
+		</style>
+		<style>
+  
+		  .container14 {
+			position: relative;
+			top: 15%;
+			right: 10%;
+			width: 100%;
+			height: 50%;
+			background-color: ;
+		  }
+		  .numbers14 {
+			display: flex;
+			gap: 15px;
+			margin-bottom: 20px;
+			background-color: ;
+			 align-items: center;
+			 justify-content: center;
+			  height: 25%;
+		  }
+		  .num14 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			
+		  }
+		  .num14:hover {
+			background: darkorange;
+		  }
+		  .text-box14 {
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 10px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 width: 100%;
+			 height: 100%;
+			 padding: 5%;
+		  }
+		</style>
+
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">14</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">تطبيق حياتي</h2></div>
+		
+		<div id= "info" class=" T-responsive-div circle" style= "top: 30%; right: 15%;width: 45%; height:17%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.3vw;color: Indigo; text-align: justify">
+		الأسمدة عبارة عن مركبات كيميائية تستخدم في تحسين الإنتاج الزراعي شكل (7).<br>
+		ومن أهم أنواع الأسمدة سماد NPK الذي يتركب من ثلاثة مركبات تحتوي على عناصر:<br>
+		
+		</h2></div>
+		
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 37%; right: 10%;width: 45%; height:45%;" >
+		<div class="container14"  style="font-size: 2vw;color: Indigo; text-align: justify">
+			<div class="numbers14">
+				<div class="num14" onclick="showText14(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num14" onclick="showText14(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num14" onclick="showText14(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+			</div>
+
+			<div id="text141" class="text-box14 animation14">
+				 النيتروجين (N) اللازم لاخضرار أوراق النبات.
+			</div>
+			<div id="text142" class="text-box14 animation14">
+				 الفوسفور (P) اللازم لتقوية الجذور.
+			</div>
+			<div id="text143" class="text-box14 animation14">
+			 البوتاسيوم (K) اللازم للنمو الصحي للنبات.
+			</div>
+		</div>
+		</div>	
+
+		<div  id= "show1" class= "T-responsive-div T-border2 animation14a" style= "top: 30%; right: 65%;width: 20%; height:45%; display: block; "  > 
+		<img src="img/11401.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback14()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show14()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11401.m4a" autoplay controls />
+		</div>
+		<script>
+			function showText14(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box14').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text14" + num).style.display = "block";
+			}
+		</script>
+	</div>
+
+
+<!--15-->
+	<div id="scene15" style= " display: none;" >
+		
+		<style>
+
+		.flip-box {
+		  background-color: transparent;
+		  width: 100%;
+		  height: 100%;
+		  border: 1px solid #f1f1f1;
+		 
+		}
+
+		.flip-box-inner {
+		  position: relative;
+		  width: 100%;
+		  height: 100%;
+		  text-align: center;
+		  transition: transform 2s;
+		  transform-style: preserve-3d;
+		}
+
+		.flip-box:hover .flip-box-inner {
+		  transform: rotateY(180deg);
+		}
+
+		.flip-box-front, .flip-box-back {
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  -webkit-backface-visibility: hidden;
+		  backface-visibility: hidden;
+		}
+
+		.flip-box-front {
+		  background-color: #bbb;
+		  color: white;
+		}
+
+		.flip-box-back {
+		  background-color: dodgerblue;
+		  color: white;
+		  transform: rotateY(180deg);
+		}
+		</style>
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">15</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">قضية للمناقشة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-radius1  " style= "top: 25%; right: 15%;width: 70%; height:55%;" >	
+		<div class="flip-box T-radius1" >
+		<div class="flip-box-inner T-radius1">
+		<div class="flip-box-front T-radius1">
+		<h2>أثر الاستخدام المفرط للأسمدة في الزراعة.</h2>
+		<img src="img/11501.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 80%">
+		
+		</div>
+		<div class="flip-box-back T-radius1">
+		<h3>الافراط في استخدام الأسمدة في الزراعة يسبب تلوث التربة والهواء والماء والتسمم الغذائي.</h3>
+		<img src="img/11502.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 80%">
+		
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<div id= "info" class=" T-responsive-div " style= "top: 78%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+				
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback15()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show15()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11501.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+<!--16-->
+	<div id="scene16" style= " display: none;" >
+		
+		<!--تنسيق أزرا التحكم في العرض التقديمي الفرعي-->
+		<style>
+		  .animation16 {
+			position: absolute;
+			bottom: -100px; /* يبدأ خارج الشاشة من الأسفل */
+			animation: moveUp16 3s ease-in-out forwards;
+		  }
+
+		  @keyframes moveUp16 {
+			from {
+			  bottom: -100px;
+			  opacity: 0;
+			}
+			to {
+			  bottom: 0%;
+			  opacity: 1;
+			}
+		  }
+		</style>
+		
+		<style>
+  
+		  .container16 {
+			position: relative;
+			top: 10%;
+			right: 10%;
+			width: 100%;
+			height: 65%;
+			background-color: ;
+		  }
+		  .numbers16 {
+			display: flex;
+			gap: 15px;
+		   
+			background-color: ;
+			 align-items: center;
+			 justify-content: center;
+			  height: 15%;
+		  }
+		  .num16 {
+			width: 10%;
+			height: 100%;
+			border-radius: 50%;
+			background: indigo;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s;
+			 margin-top: 2px;
+			
+		  }
+		  .num16:hover {
+			background: darkorange;
+		  }
+		  .text-box16 {
+		   position: relative;
+			display: none;
+			font-size: 1.2em;
+			color: indigo;
+			margin-top: 2px;
+			border-right: 4px solid indigo;
+			padding-right: 10px;
+			background: #f3f3f3;
+			border-radius: 10px;
+			background-color: ;
+			 height: 85%;
+			 padding: 5%;
+		
+			   width: 100%;
+		  }
+		</style>
+		
+		<style>
+		.prev16:hover, .next16:hover {
+		  background-color:MidnightBlue ;
+		  color:  MidnightBlue;
+		}
+
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">16</h2></div>
+		
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 5%; right: 0%;width: 82%; height:100%;" >
+		
+		
+			<div class="container16"  style="font-size: 2vw;color: Indigo; text-align: justify">
+		
+			<div class="numbers16">
+				<div class="num16" onclick="showText16(1)"><img src="icon/1.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num16" onclick="showText16(2)"><img src="icon/2.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num16" onclick="showText16(3)"><img src="icon/3.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				<div class="num16" onclick="showText16(4)"><img src="icon/4.png" alt="taha" class= "" style="width:90%; height: 90%"></div>
+				
+				
+			</div>
+				
+			<!--الإطار الفرعي-->
+			<!--1-->
+			<div id="text161" class="text-box16 animation16">
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">العلاقة بين أعداد الجسيمات دون الذرية</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:10%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اشترك مع زميل لك في اكتشاف العلاقة بين المكونات دون الذرية بإجراء النشاط (4).</h2></div>
+			
+			<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 30%; right: 30%;width: 40%; height:55%; display: block; " > 
+			<img src="img/11601.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+			
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11601.m4a" autoplay controls /></audio>
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--2-->
+			<div id="text162" class="text-box16 animation16">
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">العلاقة بين أعداد الجسيمات دون الذرية</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2.5vw;color: Indigo; text-align: right">نشاط (4) اكتشف:</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">يُوضح الشكل رقم (٨) الجسميات دون الذرية المكونة لذرات بعض العناصر.</h2></div>
+				
+			<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 40%; right: 20%;width: 60%; height:35%; display: block; "  > 
+			<a target="_blank" href="img/11602.jpg">
+			<img src="img/11602.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+			</a>
+			
+		
+			<div id= "info" class=" T-responsive-div " style= "top: 80%; right: 25%;width: 70%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: right">ملحوظة: يمكنك النقر على الصورة لعرضها في إطار منفصل بحجم كبير.</h2></div>
+		
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11602.m4a" autoplay controls /></audio>
+			</div>
+			
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--3-->
+			<div id="text163" class="text-box16 animation16">
+
+			  <div class="info T-responsive-div" style="top: 0%; right: 20%;width: 60%; height:8%;">
+				<h2 class="T-text-align-center" style="font-size: 3vw;color: MidnightBlue;">
+				  العلاقة بين أعداد الجسيمات دون الذرية
+				</h2>
+			  </div>
+
+			  <div class="info T-responsive-div" style="top: 15%; right: 10%;width: 80%; height:5%;">
+				<h2 class="T-text-align-center" style="font-size: 1.5vw;color: Indigo; text-align: right">
+				  سجل في الجدول (4) أعداد المكونات الذرية، واختر العلامة الرياضية المناسبة (>/ = / <) للتعبير عن العلاقة المناسبة بين:
+				</h2>
+			  </div>
+
+			  <div class="info T-responsive-div" style="top: 40%; right: 10%;width: 80%; height:5%;">
+				<h2 class="T-text-align-center" style="font-size: 1.5vw;color: Indigo; text-align: right">
+				  1- أعداد البروتونات والإلكترونات. <br>
+				  2- أعداد البروتونات والنيوترونات.
+				</h2>
+			  </div>
+
+			  <div id="show1" class="T-responsive-div T-border2" style="top: 30%; right: 50%;width: 40%; height:40%; display: block;">
+				<a target="_blank" href="img/11603.jpg">
+				  <img src="img/11603.jpg" alt="taha" class="T-radius1" style="width:100%; height: 100%">
+				</a>
+			  </div>
+
+			  <div class="info T-responsive-div" style="top: 65%; right: 15%;width: 70%; height:5%;">
+				<h2 class="T-text-align-center" style="font-size: 1.5vw;color: Indigo; text-align: right">
+				  ملحوظة: سلم إجابتك إلى المعلم.
+				</h2>
+			  </div>
+
+			  <div class="info T-responsive-div" style="top: 80%; right: 25%;width: 70%; height:5%;">
+				<h2 class="T-text-align-center" style="font-size: 1.5vw;color: Indigo; text-align: right">
+				  كما يمكنك النقر على الصورة لعرضها في إطار منفصل بحجم كبير.
+				</h2>
+			  </div>
+
+			  <div class="info T-responsive-div" style="top: 77%; right: 75%;width: 25%; height:15%; text-align: center">
+				<h2 class="T-text-align-center" style="font-size: 1.2vw;color: Indigo;">
+				  يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.
+				</h2>
+			  </div>
+
+			  <!--sound-->
+			  <div id="sound" class="T-responsive-div" style="top: 90%; right: 75%;width: 25%; height: 8%;">
+				<audio id="audio" style="width: 100%; height: 100%;" src="audio/11603.m4a" autoplay controls></audio>
+			  </div>
+
+			</div>
+		
+			<!--الإطار الفرعي-->
+			<!--4-->
+			<div id="text164" class="text-box16 animation16">
+			<div id= "info" class=" T-responsive-div " style= "top: 0%; right: 20%;width: 60%; height:8%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">العلاقة بين أعداد الجسيمات دون الذرية</h2></div>
+			
+			<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 10%;width: 80%; height:5%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 2.5vw;color: Indigo; text-align: right">نستنتج مما سبق أن:</h2></div>
+			
+			
+				
+			<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 15%;width: 70%; height:70%;" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.3vw;color: Indigo; text-align: justify">
+			(1) عدد البروتونات الموجبة P يساوي عدد الإلكترونات السالبة في أي ذرة لذا تكون الذرة متعادلة كهربيًا.<br>
+			(2) يسمى عدد البروتونات بالعدد الذري ويرمز له بالرمز z ويكتب أسفل يسار رمز العنصر.<br>
+			(3) عدد البروتونات قد يتساوى مع عدد النيوترونات في أنوية ذرات بعض العناصر وقد يزيد عدد النيوترونات عن عدد البروتونات في أنوية ذرات عناصر أخرى.<br>
+			(4) مجموع أعداد البروتونات والنيوترونات المكونة لنواة ذرة العنصر يمثل عدد النيوكلونات والذي يسمى بالعدد الكتلي ويُرمز له بالرمز A ويُكتب أعلى يسار رمز العنصر.<br>
+			(5) الفرق بين العدد الكتلي A والعدد الذرى Z يساوي عدد النيوترونات بنواة الذرة.
+
+			
+			
+			
+			</h2></div>
+
+			<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 75%;width: 25%; height:15%; text-align: center" >
+			<h2 class= "T-text-align-center "  style="font-size: 1.2vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+			<!--sound-->
+			<div  id= "sound" class=" T-responsive-div " 
+			style= "top: 90%; right: 75%;width: 25%; height: 8%;" > 
+			<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11604.m4a" autoplay controls /></audio>
+			</div>
+			
+			</div>
+			</div>
+		
+		
+		
+		</div>
+		<!--نهاية العرض التقديمي الفرعي-->
+		
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback16()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show16()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<script>
+			function showText16(num) {
+			// إخفاء جميع النصوص
+			document.querySelectorAll('.text-box16').forEach(el => el.style.display = "none");
+			// إظهار النص المطلوب
+			document.getElementById("text16" + num).style.display = "block";
+			}
+		</script>
+		
+		<script>
+		let slideIndex16 = [1,1];
+		let slideId16 = ["mySlides16", "mySlides2"]
+		showSlides16(1, 0);
+		showSlides16(1, 1);
+
+		function plusSlides16(n, no) {
+		  showSlides16(slideIndex16[no] += n, no);
+		}
+
+		function showSlides16(n, no) {
+		  let i;
+		  let x = document.getElementsByClassName(slideId16[no]);
+		  if (n > x.length) {slideIndex16[no] = 1}    
+		  if (n < 1) {slideIndex16[no] = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex16[no]-1].style.display = "block";  
+		}
+		</script>
+		
+	</div>
+
+<!--17-->
+	<div id="scene17" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">17</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">قيم فهمك</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 30%; right: 10%;width: 80%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: right">
+		أكمل أعداد A ، Z لرموز العناصر بالجدول (5) بالاستعانة بنتائج الجدول (4) في الإطار السابق.
+		</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 40%; right: 10%;width: 80%; height:25%; display: block; "  > 
+		<img src="img/11701.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 10%;width: 80%; height:20%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: right">
+		ملحوظة: سلم الإجابة إلى المعلم.
+		</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback17()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+				
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show17()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11701.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+<!--18-->
+	<div id="scene18" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">18</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">النظائر</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 5%;width: 40%; height:30%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: justify">
+		لاحظ العلماء أن ذرات العنصر الواحد قد يوجد لها صور مختلفة تتفق في العدد الذري وتختلف في العدد الكتلي. لاختلاف عدد النيوترونات في أنويتها وتُعرف هذه الصور بنظائر العنصر شكل (10).
+		
+		</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 45%; right: 5%;width: 40%; height:25%; display: block; "  > 
+		<img src="img/11801.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 55%;width: 40%; height:20%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: justify">
+		أكمل الجدول
+
+		</h2></div>
+
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 40%; height:35%; display: block; "  > 
+		<img src="img/11802.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 5%;width: 40%; height:30%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: justify">
+		ما نظير الهيدروجين الوحيد الذي لا توجد نيوترونات في نواته؟
+		</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 70%; right: 55%;width: 40%; height:20%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; text-align: justify">
+		ملحوظة: سلم الإجابة إلى المعلم.
+		</h2></div>
+
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback18()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show18()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11801.m4a" autoplay controls />
+		</div>
+	
+	</div>
+	
+	
+<!--19-->
+	<div id="scene19" style= " display: none;" >
+		<style>
+		/* حركة من أسفل لأعلى */
+		.animation19a {
+		  animation: moveUp19a 3s ease-in-out forwards;
+		}
+
+		@keyframes moveUp19a {
+		  from {
+			transform: translateY(200px); /* يبدأ تحت */
+			opacity: 0;
+		  }
+		  to {
+			transform: translateY(0); /* مكانه الطبيعي */
+			opacity: 1;
+		  }
+		}
+		</style>
+		
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">19</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول: تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نهاية الدرس</h2></div>
+		
+
+		<div  id= "show1" class= "T-responsive-div T-border2 animation19a" style= "top: 25%; right: 20%;width: 60%; height:50%; display: block; "  > 
+		<img src="img/11901.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 77%; right: 57%;width: 30%; height:15%; text-align: center" >
+		<h2 class= "T-text-align-center "  style="font-size: 1.5vw;color: Indigo; ">يمكنك التحكم في التعليق الصوتي باستخدام أدوات التحكم في الصوت في أسفل.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback19()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/11901.m4a" autoplay controls />
+		</div>
+	
+	</div>
+	
+
+<!--20-->
+	<div id="scene20" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">20</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback20()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show20()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+
+<!--21-->
+	<div id="scene21" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">21</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة </h2></div>
+		
+		
+		<div  id= "show0" class=" T-responsive-div T-border2" 
+		style= "top: 17%; right: 10%;width: 80%; height: 70%;" > 
+		<img src="img/111.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback21()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show21()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+<!--22-->
+	<div id="scene22" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">22</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 17%; right: 20%;width: 60%; height:13%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 5vw;color:  MidnightBlue;">الهدف التعليمي</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 40%; right: 10%;width: 80%; height:18%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 4vw;color: Indigo;">اكتساب مهارة ترتيب الخزانة، والتعرف على أنواع الملابس، وطيها، ووضعها في المكان المناسب لها.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback22()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show22()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+<!--23-->
+	<div id="scene23" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">23</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2 " style= "top: 35%; right: 30%;width: 40%; height:20%;" >
+		<a href="game1a.html" ><h2 class= "T-text-align-center "  style="font-size: 5vw;color: MidnightBlue;">لعبة ترتيب الخزانة</h2></a></div>
+		
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback23()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show23()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+
+<!--24-->
+	<div id="scene24" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">24</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (1)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر الصورة التي تدل على طي الملابس:</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 15%;width: 30%; height:40%; display: block; " onclick= "show101();" > 
+		<img src="img/141.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 30%; height:40%; display: block; " onclick= "show102();" > 
+		<img src="img/142.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback24()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show24()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+<!--25-->
+	<div id="scene25" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">25</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (2)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر صورة الجوربين المتماثلين قبل وضعهما بالخزانة:</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 15%;width: 30%; height:40%; display: block; " onclick= "show102();" > 
+		<img src="img/151.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 30%; height:40%; display: block; " onclick= "show101();" > 
+		<img src="img/152.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback25()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show25()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+<!--26-->
+	<div id="scene26" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">26</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (3)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر التصرف السليم قبل وضع الحذاء بالخزانة:</h2></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 35%;width: 30%; height:40%; display: block; " onclick= "" > 
+		<img src="img/161.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 60%; right: 10%;width: 15%; height:20%; display: block; " onclick= "show102();" > 
+		<img src="img/162.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 60%; right: 75%;width: 15%; height:20%; display: block; " onclick= "show101();" > 
+		<img src="img/163.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback26()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show26()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+<!--27-->
+	<div id="scene27" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">27</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (4)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر صورة الخزانة المرتبة:</h2></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 15%;width: 30%; height:40%; display: block; " onclick= "show102();" > 
+		<img src="img/171.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 30%; height:40%; display: block; " onclick= "show101();" > 
+		<img src="img/172.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback27()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+				
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show27()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+<!--28-->
+	<div id="scene28" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">28</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback28()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show28()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+	
+	
+<!--29-->
+	<div id="scene29" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">29</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback29()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show29()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+	
+
+<!--30-->
+	<div id="scene30" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">30</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback30()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show30()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+
+<!--31-->
+	<div id="scene31" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">31</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة </h2></div>
+		
+		
+		<div  id= "show0" class=" T-responsive-div T-border2" 
+		style= "top: 17%; right: 10%;width: 80%; height: 70%;" > 
+		<img src="img/111.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback31()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show31()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+<!--32-->
+	<div id="scene32" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">32</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 17%; right: 20%;width: 60%; height:13%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 5vw;color:  MidnightBlue;">الهدف التعليمي</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 40%; right: 10%;width: 80%; height:18%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 4vw;color: Indigo;">اكتساب مهارة ترتيب الخزانة، والتعرف على أنواع الملابس، وطيها، ووضعها في المكان المناسب لها.</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback32()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show32()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+<!--33-->
+	<div id="scene33" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">33</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2 " style= "top: 35%; right: 30%;width: 40%; height:20%;" >
+		<a href="game1a.html" ><h2 class= "T-text-align-center "  style="font-size: 5vw;color: MidnightBlue;">لعبة ترتيب الخزانة</h2></a></div>
+		
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback33()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show33()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+
+<!--34-->
+	<div id="scene34" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">34</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (1)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر الصورة التي تدل على طي الملابس:</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 15%;width: 30%; height:40%; display: block; " onclick= "show101();" > 
+		<img src="img/141.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 30%; height:40%; display: block; " onclick= "show102();" > 
+		<img src="img/142.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback34()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show34()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+<!--35-->
+	<div id="scene35" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">35</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (2)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر صورة الجوربين المتماثلين قبل وضعهما بالخزانة:</h2></div>
+		
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 15%;width: 30%; height:40%; display: block; " onclick= "show102();" > 
+		<img src="img/151.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 30%; height:40%; display: block; " onclick= "show101();" > 
+		<img src="img/152.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback35()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show35()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+
+<!--36-->
+	<div id="scene36" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">36</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (3)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر التصرف السليم قبل وضع الحذاء بالخزانة:</h2></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 35%;width: 30%; height:40%; display: block; " onclick= "" > 
+		<img src="img/161.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 60%; right: 10%;width: 15%; height:20%; display: block; " onclick= "show102();" > 
+		<img src="img/162.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 60%; right: 75%;width: 15%; height:20%; display: block; " onclick= "show101();" > 
+		<img src="img/163.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback36()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show36()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	</div>
+
+<!--37-->
+	<div id="scene37" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">37</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 15%; right: 30%;width: 40%; height:8%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: MidnightBlue;">نشاط (4)</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 25%; right: 10%;width: 60%; height:5%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 2vw;color: Indigo; text-align: right">اختر صورة الخزانة المرتبة:</h2></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 15%;width: 30%; height:40%; display: block; " onclick= "show102();" > 
+		<img src="img/171.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+				
+		<div  id= "show1" class= "T-responsive-div T-border2" style= "top: 35%; right: 55%;width: 30%; height:40%; display: block; " onclick= "show101();" > 
+		<img src="img/172.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback37()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+				
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show37()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+<!--38-->
+	<div id="scene38" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">38</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback38()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show38()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+		
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+		
+	
+	</div>
+	
+	
+<!--39-->
+	<div id="scene39" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">39</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback39()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--buttonnext-->
+		<div  id= "buttonback" class=" T-responsive-div T-border3 " 
+		style= "top: 90%; right: 90%;width: 9%; height: 8%;" onclick= "show39()"> 
+		<img src="img/14.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></div>
+	
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+	
+
+<!--40-->
+	<div id="scene40" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div" style= "top: 2%; right: 95%;width: 5%; height:5%;" >
+		<h2 class= "T-text-align-center " style="font-size: 1vw;color: white;">40</h2></div>
+		
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 3%; right: 2%;width: 7.5%; height:10%;" >
+		<img src="img/logo.jpg" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>	
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;"> الدرس الأول : تركيب الذرة</h2></div>
+		
+		<div id= "info" class=" T-responsive-div " style= "top: 35%; right: 20%;width: 60%; height:50%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 7vw;color:  MidnightBlue;">نهاية الدرس</h2></div>
+		
+		<!--buttonback-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 90%; right: 1%;width: 9%; height: 8%;" onclick= "showback40()">
+		<img src="img/12.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover ; "></div>
+		
+		<!--buttonhome-->
+		<div  id= "buttonnext" class=" T-responsive-div T-border3" 
+		style= "top: 82%; right: 45.5%;width: 9%; height: 16%;" > 
+		<a href="unit.html" ><img src="img/13.gif" alt="taha" class= "T-radius2" style="width:100%; height: 100%; background-size: cover"></a></div>
+		
+		<!--sound-->
+		<div  id= "sound" class=" T-responsive-div " 
+		style= "top: 90%; right: 60%;width: 25%; height: 8%;" > 
+		<audio id = "audio" style= "top: 0%; right: 0%;width: 100%; height: 100%;" src= "audio/101.m4a" autoplay controls />
+		</div>
+	
+	</div>
+
+
+
+
+
+<!--التعريز الإيجابي-->
+	<div id="scene101" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الإجابة صحيحة</h2></div>
+		
+		<div  id= "show1" class=" T-responsive-div T-border2" 
+		style= "top: 17%; right: 10%;width: 80%; height: 70%;" > 
+		<img src="gif/1.gif" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+
+		<!--buttonOK-->	
+		<button class="T-responsive-div T-border3" style= "top: 82%; right: 45.5%;width: 9%; height: 16%; font-size: 3vw; display: block;" onclick= "show103();" ><b>OK</b></button>
+
+
+	</div>
+
+	
+<!--التعزيز السلبي-->
+	<div id="scene102" style= " display: none;" >
+ 
+		<div id= "info" class=" T-responsive-div T-border2" style= "top: 2%; right: 25%;width: 50%; height:10%;" >
+		<h2 class= "T-text-align-center "  style="font-size: 3vw;color: white;">الإجابة خاطئة</h2></div>
+		
+		<div  id= "show1" class=" T-responsive-div T-border2" 
+		style= "top: 17%; right: 10%;width: 80%; height: 70%;" > 
+		<img src="gif/2.gif" alt="taha" class= "T-radius1" style="width:100%; height: 100%"></div>
+
+		<!--buttonOK-->	
+		<button class="T-responsive-div T-border3" style= "top: 82%; right: 45.5%;width: 9%; height: 16%; font-size: 3vw; display: block;" onclick= "show103();" ><b>OK</b></button>
+
+
+	</div>
+  
+
+<!--نهاية المشاهد-->
+</div>
+<!--نهاية المشاهد-->
+
+<!--الرسالة-->
+	<div id="page"></div>
+	<div id="msg"></div>
+	
+<!--منطقة عرض التعليق داخل القاعة-->
+	<div id="d1"></div>	
+
+		
+	
+		
+		
+<script>
+
+<!--التحكم في عرض المشاهد-->
+var scene = "scene1";
+
+/*التالي*/
+function show1(){
+	document.getElementById("scene1").style.display= "none";
+	document.getElementById("scene2").style.display= "block";
+	scene = "scene2";
+	/*window.d1.innerHTML = '	<audio id = "audio" src= "audio/101.m4a" autoplay controls />';*/
+
+}
+
+/*التالي*/
+function show2(){
+	document.getElementById("scene2").style.display= "none";
+	document.getElementById("scene3").style.display= "block";
+	scene = "scene3";
+}
+
+/*التالي*/
+function show3(){
+	document.getElementById("scene3").style.display= "none";
+	document.getElementById("scene4").style.display= "block";
+	scene = "scene4";
+}
+
+/*التالي*/
+function show4(){
+	document.getElementById("scene4").style.display= "none";
+	document.getElementById("scene5").style.display= "block";
+	scene = "scene5";
+}
+
+/*التالي*/
+function show5(){
+	document.getElementById("scene5").style.display= "none";
+	document.getElementById("scene6").style.display= "block";
+	scene = "scene6";
+}
+
+/*التالي*/
+function show6(){
+	document.getElementById("scene6").style.display= "none";
+	document.getElementById("scene7").style.display= "block";
+	scene = "scene7";
+}
+
+/*التالي*/
+function show7(){
+	document.getElementById("scene7").style.display= "none";
+	document.getElementById("scene8").style.display= "block";
+	scene = "scene8";
+}
+
+/*التالي*/
+function show8(){
+	document.getElementById("scene8").style.display= "none";
+	document.getElementById("scene9").style.display= "block";
+	scene = "scene9";
+}
+
+/*التالي*/
+function show9(){
+	document.getElementById("scene9").style.display= "none";
+	document.getElementById("scene10").style.display= "block";
+	scene = "scene10";
+}
+
+/*التالي*/
+function show10(){
+	document.getElementById("scene10").style.display= "none";
+	document.getElementById("scene11").style.display= "block";
+	scene = "scene11";
+}
+
+/*التالي*/
+function show11(){
+	document.getElementById("scene11").style.display= "none";
+	document.getElementById("scene12").style.display= "block";
+	scene = "scene12";
+}
+
+/*التالي*/
+function show12(){
+	document.getElementById("scene12").style.display= "none";
+	document.getElementById("scene13").style.display= "block";
+	scene = "scene13";
+}
+
+/*التالي*/
+function show13(){
+	document.getElementById("scene13").style.display= "none";
+	document.getElementById("scene14").style.display= "block";
+	scene = "scene14";
+}
+
+/*التالي*/
+function show14(){
+	document.getElementById("scene14").style.display= "none";
+	document.getElementById("scene15").style.display= "block";
+	scene = "scene15";
+}
+
+/*التالي*/
+function show15(){
+	document.getElementById("scene15").style.display= "none";
+	document.getElementById("scene16").style.display= "block";
+	scene = "scene16";
+}
+
+/*التالي*/
+function show16(){
+	document.getElementById("scene16").style.display= "none";
+	document.getElementById("scene17").style.display= "block";
+	scene = "scene17";
+}
+
+/*التالي*/
+function show17(){
+	document.getElementById("scene17").style.display= "none";
+	document.getElementById("scene18").style.display= "block";
+	scene = "scene18";
+}
+
+/*التالي*/
+function show18(){
+	document.getElementById("scene18").style.display= "none";
+	document.getElementById("scene19").style.display= "block";
+	scene = "scene19";
+}
+
+/*التالي*/
+function show19(){
+	document.getElementById("scene19").style.display= "none";
+	document.getElementById("scene20").style.display= "block";
+	scene = "scene20";
+}
+
+/*التالي*/
+function show20(){
+	document.getElementById("scene20").style.display= "none";
+	document.getElementById("scene21").style.display= "block";
+	scene = "scene21";
+}
+
+/*التالي*/
+function show21(){
+	document.getElementById("scene21").style.display= "none";
+	document.getElementById("scene22").style.display= "block";
+	scene = "scene22";
+}
+
+/*التالي*/
+function show22(){
+	document.getElementById("scene22").style.display= "none";
+	document.getElementById("scene23").style.display= "block";
+	scene = "scene23";
+}
+
+/*التالي*/
+function show23(){
+	document.getElementById("scene23").style.display= "none";
+	document.getElementById("scene24").style.display= "block";
+	scene = "scene24";
+}
+
+/*التالي*/
+function show24(){
+	document.getElementById("scene24").style.display= "none";
+	document.getElementById("scene25").style.display= "block";
+	scene = "scene25";
+}
+
+/*التالي*/
+function show25(){
+	document.getElementById("scene25").style.display= "none";
+	document.getElementById("scene26").style.display= "block";
+	scene = "scene26";
+}
+
+/*التالي*/
+function show26(){
+	document.getElementById("scene26").style.display= "none";
+	document.getElementById("scene27").style.display= "block";
+	scene = "scene27";
+}
+
+/*التالي*/
+function show27(){
+	document.getElementById("scene27").style.display= "none";
+	document.getElementById("scene28").style.display= "block";
+	scene = "scene28";
+}
+
+/*التالي*/
+function show28(){
+	document.getElementById("scene28").style.display= "none";
+	document.getElementById("scene29").style.display= "block";
+	scene = "scene29";
+}
+
+/*التالي*/
+function show29(){
+	document.getElementById("scene29").style.display= "none";
+	document.getElementById("scene30").style.display= "block";
+	scene = "scene30";
+}
+
+/*التالي*/
+function show30(){
+	document.getElementById("scene30").style.display= "none";
+	document.getElementById("scene31").style.display= "block";
+	scene = "scene31";
+}
+
+
+/*التالي*/
+function show31(){
+	document.getElementById("scene31").style.display= "none";
+	document.getElementById("scene32").style.display= "block";
+	scene = "scene32";
+}
+
+/*التالي*/
+function show32(){
+	document.getElementById("scene32").style.display= "none";
+	document.getElementById("scene33").style.display= "block";
+	scene = "scene33";
+}
+
+/*التالي*/
+function show33(){
+	document.getElementById("scene33").style.display= "none";
+	document.getElementById("scene34").style.display= "block";
+	scene = "scene34";
+}
+
+/*التالي*/
+function show34(){
+	document.getElementById("scene34").style.display= "none";
+	document.getElementById("scene35").style.display= "block";
+	scene = "scene35";
+}
+
+/*التالي*/
+function show35(){
+	document.getElementById("scene35").style.display= "none";
+	document.getElementById("scene36").style.display= "block";
+	scene = "scene36";
+}
+
+/*التالي*/
+function show36(){
+	document.getElementById("scene36").style.display= "none";
+	document.getElementById("scene37").style.display= "block";
+	scene = "scene37";
+}
+
+/*التالي*/
+function show37(){
+	document.getElementById("scene37").style.display= "none";
+	document.getElementById("scene38").style.display= "block";
+	scene = "scene38";
+}
+
+/*التالي*/
+function show38(){
+	document.getElementById("scene38").style.display= "none";
+	document.getElementById("scene39").style.display= "block";
+	scene = "scene39";
+}
+
+/*التالي*/
+function show39(){
+	document.getElementById("scene39").style.display= "none";
+	document.getElementById("scene40").style.display= "block";
+	scene = "scene40";
+}
+
+/*التالي*/
+function show40(){
+	document.getElementById("scene40").style.display= "none";
+	document.getElementById("scene41").style.display= "block";
+	scene = "scene41";
+}
+
+
+
+///////////////////////////////////////
+/*السابق*/
+function showback1(){
+	document.getElementById("").style.display= "none";
+	document.getElementById("").style.display= "block";
+	
+}
+
+/*السابق*/
+function showback2(){
+	document.getElementById("scene2").style.display= "none";
+	document.getElementById("scene1").style.display= "block";
+	scene = "scene1";
+}
+
+/*السابق*/
+function showback3(){
+	document.getElementById("scene3").style.display= "none";
+	document.getElementById("scene2").style.display= "block";
+	scene = "scene2";
+}
+
+/*السابق*/
+function showback4(){
+	document.getElementById("scene4").style.display= "none";
+	document.getElementById("scene3").style.display= "block";
+	scene = "scene3";
+}
+
+/*السابق*/
+function showback5(){
+	document.getElementById("scene5").style.display= "none";
+	document.getElementById("scene4").style.display= "block";
+	scene = "scene4";
+}
+
+/*السابق*/
+function showback6(){
+	document.getElementById("scene6").style.display= "none";
+	document.getElementById("scene5").style.display= "block";
+	scene = "scene5";
+}
+
+/*السابق*/
+function showback7(){
+	document.getElementById("scene7").style.display= "none";
+	document.getElementById("scene6").style.display= "block";
+	scene = "scene6";
+}
+
+/*السابق*/
+function showback8(){
+	document.getElementById("scene8").style.display= "none";
+	document.getElementById("scene7").style.display= "block";
+	scene = "scene7";
+}
+
+/*السابق*/
+function showback9(){
+	document.getElementById("scene9").style.display= "none";
+	document.getElementById("scene8").style.display= "block";
+	scene = "scene8";
+}
+
+/*السابق*/
+function showback10(){
+	document.getElementById("scene10").style.display= "none";
+	document.getElementById("scene9").style.display= "block";
+	scene = "scene9";
+}
+
+/*السابق*/
+function showback11(){
+	document.getElementById("scene11").style.display= "none";
+	document.getElementById("scene10").style.display= "block";
+	scene = "scene10";
+}
+
+/*السابق*/
+function showback12(){
+	document.getElementById("scene12").style.display= "none";
+	document.getElementById("scene11").style.display= "block";
+	scene = "scene11";
+}
+
+/*السابق*/
+function showback13(){
+	document.getElementById("scene13").style.display= "none";
+	document.getElementById("scene12").style.display= "block";
+	scene = "scene12";
+}
+
+/*السابق*/
+function showback14(){
+	document.getElementById("scene14").style.display= "none";
+	document.getElementById("scene13").style.display= "block";
+	scene = "scene13";
+}
+
+/*السابق*/
+function showback15(){
+	document.getElementById("scene15").style.display= "none";
+	document.getElementById("scene14").style.display= "block";
+	scene = "scene14";
+}
+
+/*السابق*/
+function showback16(){
+	document.getElementById("scene16").style.display= "none";
+	document.getElementById("scene15").style.display= "block";
+	scene = "scene15";
+}
+
+/*السابق*/
+function showback17(){
+	document.getElementById("scene17").style.display= "none";
+	document.getElementById("scene16").style.display= "block";
+	scene = "scene16";
+}
+
+/*السابق*/
+function showback18(){
+	document.getElementById("scene18").style.display= "none";
+	document.getElementById("scene17").style.display= "block";
+	scene = "scene17";
+}
+
+/*السابق*/
+function showback19(){
+	document.getElementById("scene19").style.display= "none";
+	document.getElementById("scene18").style.display= "block";
+	scene = "scene18";
+}
+
+/*السابق*/
+function showback20(){
+	document.getElementById("scene20").style.display= "none";
+	document.getElementById("scene19").style.display= "block";
+	scene = "scene19";
+}
+
+/*السابق*/
+function showback21(){
+	document.getElementById("scene21").style.display= "none";
+	document.getElementById("scene20").style.display= "block";
+	scene = "scene20";
+}
+
+/*السابق*/
+function showback22(){
+	document.getElementById("scene22").style.display= "none";
+	document.getElementById("scene21").style.display= "block";
+	scene = "scene21";
+}
+
+/*السابق*/
+function showback23(){
+	document.getElementById("scene23").style.display= "none";
+	document.getElementById("scene22").style.display= "block";
+	scene = "scene22";
+}
+
+/*السابق*/
+function showback24(){
+	document.getElementById("scene24").style.display= "none";
+	document.getElementById("scene23").style.display= "block";
+	scene = "scene23";
+}
+
+/*السابق*/
+function showback25(){
+	document.getElementById("scene25").style.display= "none";
+	document.getElementById("scene24").style.display= "block";
+	scene = "scene24";
+}
+
+/*السابق*/
+function showback26(){
+	document.getElementById("scene26").style.display= "none";
+	document.getElementById("scene25").style.display= "block";
+	scene = "scene25";
+}
+
+/*السابق*/
+function showback27(){
+	document.getElementById("scene27").style.display= "none";
+	document.getElementById("scene26").style.display= "block";
+	scene = "scene26";
+}
+
+/*السابق*/
+function showback28(){
+	document.getElementById("scene28").style.display= "none";
+	document.getElementById("scene27").style.display= "block";
+	scene = "scene27";
+}
+
+/*السابق*/
+function showback29(){
+	document.getElementById("scene29").style.display= "none";
+	document.getElementById("scene28").style.display= "block";
+	scene = "scene28";
+}
+
+/*السابق*/
+function showback30(){
+	document.getElementById("scene30").style.display= "none";
+	document.getElementById("scene29").style.display= "block";
+	scene = "scene29";
+}
+
+/*السابق*/
+function showback31(){
+	document.getElementById("scene31").style.display= "none";
+	document.getElementById("scene30").style.display= "block";
+	scene = "scene30";
+}
+
+/*السابق*/
+function showback32(){
+	document.getElementById("scene32").style.display= "none";
+	document.getElementById("scene31").style.display= "block";
+	scene = "scene31";
+}
+
+/*السابق*/
+function showback33(){
+	document.getElementById("scene33").style.display= "none";
+	document.getElementById("scene32").style.display= "block";
+	scene = "scene32";
+}
+
+/*السابق*/
+function showback34(){
+	document.getElementById("scene34").style.display= "none";
+	document.getElementById("scene33").style.display= "block";
+	scene = "scene33";
+}
+
+/*السابق*/
+function showback35(){
+	document.getElementById("scene35").style.display= "none";
+	document.getElementById("scene34").style.display= "block";
+	scene = "scene34";
+}
+
+/*السابق*/
+function showback36(){
+	document.getElementById("scene36").style.display= "none";
+	document.getElementById("scene35").style.display= "block";
+	scene = "scene35";
+}
+
+/*السابق*/
+function showback37(){
+	document.getElementById("scene37").style.display= "none";
+	document.getElementById("scene36").style.display= "block";
+	scene = "scene36";
+}
+
+/*السابق*/
+function showback38(){
+	document.getElementById("scene38").style.display= "none";
+	document.getElementById("scene37").style.display= "block";
+	scene = "scene37";
+}
+
+/*السابق*/
+function showback39(){
+	document.getElementById("scene39").style.display= "none";
+	document.getElementById("scene38").style.display= "block";
+	scene = "scene38";
+}
+
+/*السابق*/
+function showback40(){
+	document.getElementById("scene40").style.display= "none";
+	document.getElementById("scene39").style.display= "block";
+	scene = "scene39";
+}
+
+
+/*السابق*/
+function showback41(){
+	document.getElementById("scene11").style.display= "none";
+	document.getElementById("scene8").style.display= "block";
+	scene = "scene8";
+}
+
+
+<!--التحكم في عرض التعزيز الإجابي والسلبي-->
+<!--التعزيز الإيجابي-->
+function show101(){
+	document.getElementById(scene).style.display= "none";
+	document.getElementById("scene101").style.display= "block";
+	window.d1.innerHTML = "<audio src='audio/audio1.wav' autoplay   />";
+}
+<!--التعزيز السلبي-->
+function show102(){
+	document.getElementById(scene).style.display= "none";
+	document.getElementById("scene102").style.display= "block";
+	window.d1.innerHTML = "<audio src='audio/audio2.wav' autoplay   />";
+}
+<!--الخروج من التعزيز الإيجابي والسلبي-->
+function show103(){
+	document.getElementById("scene101").style.display= "none";
+	document.getElementById("scene102").style.display= "none";
+	document.getElementById(scene).style.display= "block";
+
+}
+
+
+
+</script>
+</body>
+</html>
